@@ -1,0 +1,11 @@
+{{foreach key = key item = item from = $servicios}}
+	{{if $item.img}}
+		<a class="servicio" href="{{$item.link}}" attr-busqueda="{{$item.nombre}}" busqueda>
+			<h2>{{$item.nombre}}</h2>
+			<img src="../assets/images/{{$item.img}}" alt="Servicio técnico {{$item.nombre}}" title="Servicio técnico {{$item.nombre}}"/>
+			<article>
+				<p>{{$item.resumen}}</p>
+			</article>
+		</a>
+	{{/if}}
+{{/foreach}}
