@@ -1,5 +1,7 @@
-<ul class="telefonos">
-	{{foreach key = key item = item from = $poblaciones}}
+<div class="bloque bloques-telefono">	
+	<ul class="telefonos">
+		{{foreach key = key item = item from = $poblaciones}}
     		<li>{{$item.pueblo}} <span>{{$item.telefono}}</span></span></li>
-  	{{/foreach}}
-</ul>
+  		{{/foreach}}
+	</ul>
+</div>	

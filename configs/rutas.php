@@ -16,6 +16,28 @@ $menuheader = array(
 
 
 $servicios = array(
+	#thermomix
+	#cafetereas
+	#maquinas de coser
+	#televisión
+	#antenistas
+	#informática
+	#equipamiento hospitalario Y aparatología denttal
+	#equipamiento de gimnasio, relax y cintas de correr
+	#servicios técnicos para empresas
+	#centralitas telefónicas
+	#cámaras de frio y aire acondicionado
+	#informática
+	#domótca
+	#automatismos
+	#electricistas
+	#alarmas
+	#apertura de puertas y cerrajeria
+	#fontaneros
+	#averías de gas
+	#energía solar
+	#pintores y parquet
+
 	0 => array(
 		"nombre" => "Centralitas telefónicas",
 		"link" => "servicios/centralitas-telefonicas",

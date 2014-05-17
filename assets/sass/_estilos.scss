@@ -70,7 +70,14 @@ header{
 footer{
 	clear: both;
 	width: 100%;
-	background: green;
+	background: $colorazul;
+	padding: 1em;
+	color: white;
+	a{
+		color: white;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 }
 
 div.bloque{
@@ -118,6 +125,22 @@ div.bloque-contenido{
 				font-size: 0.8em;
 			}
 		}
+		&.nomostrar{
+			display: none;
+		}
+	}
+}
+
+div.bloque-contenido.quienes-somos{
+	img{
+		float: left;
+	}
+	ul li{
+		margin: 0.6em;
+		margin-left: 2em;
+		a{
+			color: $colorazul;
+		}
 	}
 }
 
@@ -147,4 +170,7 @@ ul.telefonos{
 	margin-bottom: 5em;
 	font-size: 1em;
 	color: $colorazul;
+	-moz-box-shadow: inset 0 0 10px 1px #c4c4c4;
+	-webkit-box-shadow: inset 0 0 10px 1px #c4c4c4;
+	box-shadow: inset 0 0 10px 1px #c4c4c4;
 }

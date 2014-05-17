@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-10 13:42:35
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-17 13:18:55
          compiled from "./templates/index.html" */ ?>
 <?php /*%%SmartyHeaderCode:1809792376531afe53a43825-66786859%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '386e744df7e9238f7ec52b4ceb835215e0b2a942' => 
     array (
       0 => './templates/index.html',
-      1 => 1399722054,
+      1 => 1400325338,
       2 => 'file',
     ),
   ),
@@ -37,15 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<p><strong>Asistecnic - Multiservicios</strong>: ofrecemos servicio de mantenimiento, reparación, y restauración tanto de electrodmésticos, equipos insdustriales, aparatología de rehabilitación.</p>
 		<p>Ofrecemos servcios de urgencias las 24 horas, nuestro servicio es profesional y garantizado, nuestros precios son los más competitivos.</p>
 		
-		<input type="text" id="buscador" class="inputs-text" name="buscador" ng-change="buscar(abuscar)" ng-model="abuscar" placeholder="Busca tu servicio"/>
-	</article> 
+		<input type="text" id="buscador" class="inputs-text" name="buscador" ng-change="buscar(abuscar)" ng-model="abuscar" placeholder="BUSCA AQUÍ TU SERVICIO..."/>
+	</article>
+
 	<?php echo $_smarty_tpl->getSubTemplate ("servicios.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-</div>
-<div class="bloque bloques-telefono">	
-	<?php echo $_smarty_tpl->getSubTemplate ("telefonos.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>	
 
-</div>
+<?php echo $_smarty_tpl->getSubTemplate ("telefonos.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 
 <?php echo $_smarty_tpl->getSubTemplate ("footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 <?php }} ?>

@@ -1,5 +1,6 @@
 var _multiservicios_ = angular.module("App", []);
 
+
 _multiservicios_.directive("busqueda",function() {
 	return {
 		link: function($rootScope, $elm, $attr) {
@@ -8,15 +9,18 @@ _multiservicios_.directive("busqueda",function() {
 	}
 });
 
+
 var controladorPrincipal = function($rootScope, $scope) {
 	$rootScope.Servicios = {};
 
 	$scope.buscar = function(abuscar) {
-		var re = new RegExp(abuscar,"gi");
-
 		angular.forEach($rootScope.Servicios, function(value, key) {
-			if(abuscar.match(key)){
-				console.log("DEV:", key);
+			var __elemento__ = angular.element(value);
+			
+			if(key.indexOf(abuscar) > -1){
+				__elemento__.removeClass("nomostrar");
+			}else{
+				__elemento__.addClass("nomostrar");
 			}
 		});
 	}

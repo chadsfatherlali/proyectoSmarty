@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-04-19 12:57:56
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-17 12:11:39
          compiled from "./templates/telefonos.html" */ ?>
 <?php /*%%SmartyHeaderCode:440019122535247bebb6c42-68513048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e2ea188d2b019e110666d58b1d7e26b5faae3851' => 
     array (
       0 => './templates/telefonos.html',
-      1 => 1397905044,
+      1 => 1400321463,
       2 => 'file',
     ),
   ),
@@ -24,8 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_535247bebd3013_32700167')) {function content_535247bebd3013_32700167($_smarty_tpl) {?><ul class="telefonos">
-	<?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+<?php if ($_valid && !is_callable('content_535247bebd3013_32700167')) {function content_535247bebd3013_32700167($_smarty_tpl) {?><div class="bloque bloques-telefono">	
+	<ul class="telefonos">
+		<?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['poblaciones']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
@@ -35,6 +36,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
     		<li><?php echo $_smarty_tpl->tpl_vars['item']->value['pueblo'];?>
  <span><?php echo $_smarty_tpl->tpl_vars['item']->value['telefono'];?>
 </span></span></li>
-  	<?php } ?>
-</ul>
-<?php }} ?>
+  		<?php } ?>
+	</ul>
+</div>	<?php }} ?>

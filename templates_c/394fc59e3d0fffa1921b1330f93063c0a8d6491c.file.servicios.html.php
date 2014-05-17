@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-10 13:21:41
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-17 12:14:05
          compiled from "./templates/servicios.html" */ ?>
 <?php /*%%SmartyHeaderCode:7338951195336b5ce3ce267-74416467%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '394fc59e3d0fffa1921b1330f93063c0a8d6491c' => 
     array (
       0 => './templates/servicios.html',
-      1 => 1399720889,
+      1 => 1400321643,
       2 => 'file',
     ),
   ),
@@ -33,7 +33,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 ?>
 	<?php if ($_smarty_tpl->tpl_vars['item']->value['img']) {?>
 		<a class="servicio" href="<?php echo $_smarty_tpl->tpl_vars['item']->value['link'];?>
-" attr-busqueda="<?php echo $_smarty_tpl->tpl_vars['item']->value['nombre'];?>
+" attr-busqueda="<?php echo mb_strtolower($_smarty_tpl->tpl_vars['item']->value['nombre'], 'UTF-8');?>
 " busqueda>
 			<h2><?php echo $_smarty_tpl->tpl_vars['item']->value['nombre'];?>
 </h2>
