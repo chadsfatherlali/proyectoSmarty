@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-17 13:56:09
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:16:47
          compiled from "./templates/header.html" */ ?>
 <?php /*%%SmartyHeaderCode:1064589448531b10fca146b0-12540684%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd701c050746a5ee258b58a5bc4dd80a198b99e51' => 
     array (
       0 => './templates/header.html',
-      1 => 1400327758,
+      1 => 1400930205,
       2 => 'file',
     ),
   ),
@@ -19,28 +19,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_531b10fca1eb62_08981071',
   'variables' => 
   array (
-    'seo' => 0,
+    'servicios' => 0,
     'menuheader' => 0,
     'item' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_531b10fca1eb62_08981071')) {function content_531b10fca1eb62_08981071($_smarty_tpl) {?><?php if (!is_callable('smarty_function_seo')) include '/opt/lampp/htdocs/libs/plugins/function.seo.php';
-if (!is_callable('smarty_function_comprimirhtml')) include '/opt/lampp/htdocs/libs/plugins/function.comprimirhtml.php';
-?><?php echo smarty_function_seo(array(),$_smarty_tpl);?>
-
-<?php echo smarty_function_comprimirhtml(array('estado'=>"inicio"),$_smarty_tpl);?>
-
-<!doctype html>
+<?php if ($_valid && !is_callable('content_531b10fca1eb62_08981071')) {function content_531b10fca1eb62_08981071($_smarty_tpl) {?><!doctype html>
 <html lang="es" ng-app="App">
 <head>
 	<meta charset="UTF-8" />
-	<title>Asistecnic Multiservicios - <?php echo $_smarty_tpl->tpl_vars['seo']->value['title'];?>
+	<title>Asistecnic Multiservicios - <?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['title'];?>
 </title>
 
-	<meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['seo']->value['descripcion'];?>
+	<meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['descripcion'];?>
 " />
-	<meta name="keywords" content="<?php echo $_smarty_tpl->tpl_vars['seo']->value['keywords'];?>
+	<meta name="keywords" content="<?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['keywords'];?>
 " />
 
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/screen.css">

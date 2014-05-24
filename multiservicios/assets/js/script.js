@@ -16,8 +16,9 @@ var controladorPrincipal = function($rootScope, $scope) {
 	$scope.buscar = function(abuscar) {
 		angular.forEach($rootScope.Servicios, function(value, key) {
 			var __elemento__ = angular.element(value);
-			
-			if(key.indexOf(abuscar) > -1){
+			var __abuscar__ = abuscar.toLowerCase();
+
+			if(key.indexOf(__abuscar__) > -1){
 				__elemento__.removeClass("nomostrar");
 			}else{
 				__elemento__.addClass("nomostrar");

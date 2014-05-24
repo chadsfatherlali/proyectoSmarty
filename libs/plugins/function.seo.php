@@ -10,12 +10,13 @@
  */
 
 function smarty_function_seo($params, $smarty) {
-	include("../multiservicios/configs/seo.php");
-    $seoreturn = (isset($_GET["template"]) && !empty($_GET["template"]))
-    ? @$seo[$_GET["template"]]
-    : $seo["index"];
+	include("../multiservicios/configs/rutas.php");
 
-    $seoreturn = (!empty($seoreturn))? $seoreturn : $seo["index"];
+    $seoreturn = (isset($_GET["template"]) && !empty($_GET["template"]))
+    ? @$servicios[$_GET["template"]]
+    : $servicios["index"];
+
+    $seoreturn = (!empty($seoreturn))? $seoreturn : $servicios["index"];
 
     $smarty->assign("seo", $seoreturn);
 }

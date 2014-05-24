@@ -1,13 +1,11 @@
-{{seo}}
-{{comprimirhtml estado="inicio"}}
 <!doctype html>
 <html lang="es" ng-app="App">
 <head>
 	<meta charset="UTF-8" />
-	<title>Asistecnic Multiservicios - {{$seo.title}}</title>
+	<title>Asistecnic Multiservicios - {{$servicios[$smarty.get.template|default:index].title}}</title>
 
-	<meta name="description" content="{{$seo.descripcion}}" />
-	<meta name="keywords" content="{{$seo.keywords}}" />
+	<meta name="description" content="{{$servicios[$smarty.get.template|default:index].descripcion}}" />
+	<meta name="keywords" content="{{$servicios[$smarty.get.template|default:index].keywords}}" />
 
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/screen.css">
 	

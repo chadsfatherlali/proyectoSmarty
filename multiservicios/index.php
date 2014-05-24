@@ -31,7 +31,6 @@ $smarty->right_delimiter = "}}";
 // $smarty->assign("option_output", array("New York","Nebraska","Kansas","Iowa","Oklahoma","Texas"));
 // $smarty->assign("option_selected", "NE");
 
-include("configs/seo.php");
 include("configs/rutas.php");
 include("configs/poblaciones.php");
 

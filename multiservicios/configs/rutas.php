@@ -52,15 +52,25 @@ $servicios = array(
 	#jardineria
 	#reformas y construcción
 	#toldos
-	
-
-	0 => array(
+	"index" =>  array(
+		"title" => "Servicio técnico Madrid, Toledo y poblaciones",
+		"descripcion" => "Servicio téncico, reparaciones, averías y mantenimiento en general en Madrid, Toledo y poblaciones",
+		"keywords" => "mantenimientos, reparaciones, averías, servicio técnico, urgencias 24 horas, televisores, equipos de sonido, máquinas de coser.",
+		"nombre" => "",
+		"link" => "",
+		"img" => "",
+		"resumen" => "",
+	),
+	"servicios/centralitas-telefonicas" => array(
+		"title" => "Servicio técnico de Centralitas telefónicas Madrid, Toledo y poblaciones",
+		"descripcion" => "Servicio técnico, reparaciones, averías y mantenimiento de centralitas telefónicas en general",
+		"keywords" => "mantenimiento, reparaciones, centralitas telefónicas, telefónos, comunicaciones",
 		"nombre" => "Centralitas telefónicas",
 		"link" => "servicios/centralitas-telefonicas",
 		"img" => "centralitas-telefonicas.jpg",
 		"resumen" => "Instalación, reparación y mantenimiento de centralitas, repetidoras de wifi.",
 	),
-	1 => array(
+	"servicios/informatica" => array(
 		"nombre" => "Informática",
 		"link" => "servicios/informatica",
 		"img" => "informatica.jpg",
