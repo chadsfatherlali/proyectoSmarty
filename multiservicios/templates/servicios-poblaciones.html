@@ -1,0 +1,7 @@
+<ul id="link-poblaciones">
+	{{foreach key = key item = item from = $poblaciones}}
+		{{if $item.pueblo != "Otras Poblaciones" and $item.pueblo != "Central"}}
+			<li><a href="../poblaciones/{{$item.pueblo}}"><strong>*</strong> {{$servicios[$smarty.get.template].nombre}} <strong>{{$item.pueblo}}</strong>.</a></li>
+		{{/if}}
+	{{/foreach}}
+</ul>
