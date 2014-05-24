@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:01:09
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:30:09
          compiled from "./templates/servicios/centralitas-telefonicas.html" */ ?>
 <?php /*%%SmartyHeaderCode:10003197585336b37e158943-65277227%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '67d10162dd7fc38e389743ff595bf59cbb019250' => 
     array (
       0 => './templates/servicios/centralitas-telefonicas.html',
-      1 => 1400929266,
+      1 => 1400930589,
       2 => 'file',
     ),
   ),
@@ -29,6 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="bloque bloque-contenido">
 	<h1><?php echo $_smarty_tpl->tpl_vars['servicios']->value[$_GET['template']]['title'];?>
 .</h1>
+	
 	<div id="imgcontent">
 		<img src="../assets/images/<?php echo $_smarty_tpl->tpl_vars['servicios']->value[$_GET['template']]['img'];?>
 ">

@@ -173,11 +173,13 @@ div.bloque-contenido.quienes-somos{
 	img{
 		float: left;
 	}
-	ul li{
-		margin: 0.6em;
-		margin-left: 2em;
-		a{
-			color: $colorazul;
+	ul{ 
+	margin: 2em 1em;
+		li{
+			margin-bottom: 0.3em;
+			a{
+				color: $colorazul;
+			}
 		}
 	}
 }
