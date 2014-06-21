@@ -6,9 +6,8 @@
 
 require '../libs/Smarty.class.php';
 
-$template = (isset($_GET["template"]))
-? $_GET["template"] . ".html"
-: "index.html";
+$template = (isset($_GET["template"]))? $_GET["template"] . ".html" : "index.html";
+$template = (strpos($template, "poblaciones/") === false)? $template : "poblaciones/index.html";
 
 $smarty = new Smarty;
 //$smarty->force_compile = true;

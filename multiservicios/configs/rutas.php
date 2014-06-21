@@ -16,18 +16,6 @@ $menuheader = array(
 
 
 $servicios = array(
-	#thermomix
-	#cafetereas
-	
-	#electrodomésticos
-	#aspiradoras
-	#averías de gas
-	#desatrancos y poceria
-	#mudanzas
-	#limpiezas y mantenimientos
-	#jardineria
-	#reformas y construcción
-	#toldos
 	"index" =>  array(
 		"title" => "Servicio técnico Madrid, Toledo y poblaciones",
 		"descripcion" => "Servicio téncico, reparaciones, averías y mantenimiento en general en Madrid, Toledo y poblaciones",
@@ -56,6 +44,9 @@ $servicios = array(
 		"resumen" => "",	
 	),
 	"servicio-tecnico/antenistas" => array(
+		"title" => "Servicio téncio antenistas Madrid y poblaciones",
+		"descripcion" => "Servicio técnico de antenistas, reparación y mantenimiento de antenas.",
+		"keywords" => "mantenimiento, reparación de antenas, antenistas",
 		"nombre" => "Antenistas",
 		"link" => "servicio-tecnico/antenistas",
 		"img" => "antenistas.jpg",
@@ -193,10 +184,12 @@ $servicios = array(
 		"img" => "",
 		"resumen" => "",	
 	),
-
-
-
-
+	"servicio-tecnico/Desatrancos-y-poceria" => array(
+		"nombre" => "Desatrancos y pocería",
+		"link" => "servicio-tecnico/Desatrancos-y-poceria",
+		"img" => "",
+		"resumen" => "",	
+	),
 
 	6 => array(
 		"nombre" => "Jardinería",
@@ -211,10 +204,7 @@ $servicios = array(
 		"img" => "toldos.jpg",
 		"resumen" => "Instalación, reparación y mantenimiento de todo tipo de toldos, para hogar empresas e industrias.",	
 	),
-	
-	
-	
-	
+		
 	15 => array(
 		"nombre" => "Mudánzas",
 		"link" => "servicio-tecnico/mudanzas",
@@ -222,17 +212,12 @@ $servicios = array(
 		"resumen" => "Ofrecemos un servicio de transporte y embalajes para hacer más comodo tu mudanzas, contamos con personal altamente cualificado.",	
 	),
 
-
-	
-
 	21 => array(
 		"nombre" => "Cafeteras, thermomix y aspiradoras",
 		"link" => "servicio-tecnico/cafeteras-thermomix-y-aspiradoras",
 		"img" => "",
 		"resumen" => "",	
 	),
-
-
 
 	25 => array(
 		"nombre" => "Reformas y construcción",
@@ -250,14 +235,6 @@ $servicios = array(
 	28 => array(
 		"nombre" => "Aire acondicionado",
 		"link" => "servicio-tecnico/aire-acondicionado",
-		"img" => "",
-		"resumen" => "",	
-	),
-
-	
-	31 => array(
-		"nombre" => "Desatrancos y pocería",
-		"link" => "servicio-tecnico/Desatrancos-y-poceria",
 		"img" => "",
 		"resumen" => "",	
 	),

@@ -2,13 +2,14 @@
 <html lang="es" ng-app="App">
 <head>
 	<meta charset="UTF-8" />
-	<title>Asistecnic Multiservicios - {{$servicios[$smarty.get.template|default:index].title}}</title>
+	<title>{{if $arg|default:servicios == "servicios"}}Asistecnic Multiservicios - {{$servicios[$smarty.get.template|default:index].title}}{{else}}Servicio técnico - {{$poblaciones[$smarty.get.template].pueblo}} | Telf: {{$poblaciones[$smarty.get.template].telefono}}{{/if}}</title>
 
-	<meta name="description" content="{{$servicios[$smarty.get.template|default:index].descripcion}}" />
-	<meta name="keywords" content="{{$servicios[$smarty.get.template|default:index].keywords}}" />
+	<meta name="description" content="{{if $arg|default:servicios == "servicios"}}{{$servicios[$smarty.get.template|default:index].descripcion}}{{else}}Atendemos en {{$poblaciones[$smarty.get.template].pueblo}}, servicio técnico urgencias y las 24 horas. Telf: {{$poblaciones[$smarty.get.template].telefono}}{{/if}}" />
+	<meta name="keywords" content="{{if $arg|default:servicios == "servicios"}}{{$servicios[$smarty.get.template|default:index].keywords}}{{else}}Servicio técnico {{$poblaciones[$smarty.get.template].pueblo}}, urgencias {{$poblaciones[$smarty.get.template].pueblo}}, reparaciones {{$poblaciones[$smarty.get.template].pueblo}}, reparación {{$poblaciones[$smarty.get.template].pueblo}}{{/if}}" />
 
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/screen.css">
 	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 </head>
 <body ng-controller="controladorPrincipal">

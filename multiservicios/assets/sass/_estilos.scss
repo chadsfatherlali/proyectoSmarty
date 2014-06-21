@@ -154,18 +154,45 @@ div.bloque-contenido{
 	}
 	section{
 		margin-top: 2em; 
-		article p{
-			text-align: justify;
+		article{
+			p{
+				text-align: justify;
+			}
+			ol{
+				font-weight: bold;
+				list-style-type: decimal;
+				color: $colorazul;
+				margin-left: 3em;
+				margin-top: 2em;
+				li span{
+					font-weight: normal;
+					color: $colorgris;
+				}
+			}
 		}
 	}
+	h3{
+		margin-top: 3em;
+		display: block;
+		width: 100%;
+		padding: 1em;
+		background: $colorazul;
+		color: white;
+		font-weight: bold;
+	}
 	ul#link-poblaciones{
-		margin: 2em 1em;
+		margin: 1em 1em;
 		li{
 			margin-bottom: 0.3em;
 			a{
 				color: $colorazul;
 			}
 		}
+	}
+	#mapa{
+		width: 100%;
+		height: 300px;
+		margin-bottom: 2em;
 	}
 }
 
@@ -174,7 +201,7 @@ div.bloque-contenido.quienes-somos{
 		float: left;
 	}
 	ul{ 
-	margin: 2em 1em;
+		margin: 2em 1em;
 		li{
 			margin-bottom: 0.3em;
 			a{

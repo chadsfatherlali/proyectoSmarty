@@ -1,70 +1,70 @@
 <?
 $poblaciones = array(
-	array(
+	"poblaciones/Madrid" => array(
 		"pueblo" => "Madrid", 
 		"telefono" => 913504579,
 	),
-	array(
+	"poblaciones/Toledo" => array(
 		"pueblo" => "Toledo",
 		"telefono" => 925227150,	
 	),
-	array(
+	"poblaciones/Alcobendas" => array(
 		"pueblo" => "Alcobendas", 
 		"telefono" => 916610429,
 	),
-	array(
+	"poblaciones/Alcorcón" => array(
 		"pueblo" => "Alcorcón",
 		"telefono" => 916440371, 
 	),
-	array(
+	"poblaciones/Boadilla del Monte" => array(
 		"pueblo" => "Boadilla del Monte",
 		"telefono" => 916320559, 
 	),
-	array(
+	"poblaciones/El Escorial" => array(
 		"pueblo" => "El Escorial", 
 		"telefono" => 918904490,
 	),
-	array(
+	"poblaciones/Getafe" => array(
 		"pueblo" => "Getafe",
 		"telefono" => 916017597,
 	),
-	array(
+	"poblaciones/Las Rozas" => array(
 		"pueblo" => "Las Rozas",
 		"telefono" => 916371800, 
 	),
-	array(
+	"poblaciones/Majadahonda" => array(
 		"pueblo" => "Majadahonda",
 		"telefono" => 916386201,
 	),
-	array(
+	"poblaciones/Móstoles" => array(
 		"pueblo" => "Móstoles",
 		"telefono" => 916659910,
 	),
-	array(
+	"poblaciones/Parla" => array(
 		"pueblo" => "Parla",
 		"telefono" => 916989339,
 	),
-	array(
+	"poblaciones/Pozuelo de Alarcón" => array(
 		"pueblo" => "Pozuelo de Alarcón",
 		"telefono" => 917157198,
 	),
-	array(
+	"poblaciones/Torrelodones" => array(
 		"pueblo" => "Torrelodones",
 		"telefono" => 918590383, 
 	),
-	array(
+	"poblaciones/Villalba" => array(
 		"pueblo" => "Villalba",
 		"telefono" => 918503783, 
 	),
-	array(
+	"poblaciones/Villaviciosa de Odón" => array(
 		"pueblo" => "Villaviciosa de Odón",
 		"telefono" => 916166354,
 	),
-	array(
+	"poblaciones/Otras Poblaciones" => array(
 		"pueblo" => "Otras Poblaciones",
 		"telefono" => 615190794,
 	), 
-	array(
+	"poblaciones/Central" =>array(
 		"pueblo" => "Central",
 		"telefono" => 916053673,
 	),

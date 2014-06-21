@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:21:46
+<?php /* Smarty version Smarty-3.1.16, created on 2014-06-21 13:38:29
          compiled from "./templates/header.html" */ ?>
 <?php /*%%SmartyHeaderCode:1064589448531b10fca146b0-12540684%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd701c050746a5ee258b58a5bc4dd80a198b99e51' => 
     array (
       0 => './templates/header.html',
-      1 => 1400930495,
+      1 => 1403350498,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_531b10fca1eb62_08981071',
   'variables' => 
   array (
+    'arg' => 0,
     'servicios' => 0,
+    'poblaciones' => 0,
     'menuheader' => 0,
     'item' => 0,
   ),
@@ -29,16 +31,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <html lang="es" ng-app="App">
 <head>
 	<meta charset="UTF-8" />
-	<title>Asistecnic Multiservicios - <?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['title'];?>
-</title>
+	<title><?php if ((($tmp = @$_smarty_tpl->tpl_vars['arg']->value)===null||$tmp==='' ? 'servicios' : $tmp)=="servicios") {?>Asistecnic Multiservicios - <?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['title'];?>
+<?php } else { ?>Servicio técnico - <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+ | Telf: <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['telefono'];?>
+<?php }?></title>
 
-	<meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['descripcion'];?>
-" />
-	<meta name="keywords" content="<?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['keywords'];?>
-" />
+	<meta name="description" content="<?php if ((($tmp = @$_smarty_tpl->tpl_vars['arg']->value)===null||$tmp==='' ? 'servicios' : $tmp)=="servicios") {?><?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['descripcion'];?>
+<?php } else { ?>Atendemos en <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+, servicio técnico urgencias y las 24 horas. Telf: <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['telefono'];?>
+<?php }?>" />
+	<meta name="keywords" content="<?php if ((($tmp = @$_smarty_tpl->tpl_vars['arg']->value)===null||$tmp==='' ? 'servicios' : $tmp)=="servicios") {?><?php echo $_smarty_tpl->tpl_vars['servicios']->value[(($tmp = @$_GET['template'])===null||$tmp==='' ? 'index' : $tmp)]['keywords'];?>
+<?php } else { ?>Servicio técnico <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+, urgencias <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+, reparaciones <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+, reparación <?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
+<?php }?>" />
 
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/screen.css">
 	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 </head>
 <body ng-controller="controladorPrincipal">
