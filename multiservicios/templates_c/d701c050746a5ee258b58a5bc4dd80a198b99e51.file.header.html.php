@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-06-21 13:38:29
+<?php /* Smarty version Smarty-3.1.16, created on 2014-07-05 12:51:06
          compiled from "./templates/header.html" */ ?>
 <?php /*%%SmartyHeaderCode:1064589448531b10fca146b0-12540684%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd701c050746a5ee258b58a5bc4dd80a198b99e51' => 
     array (
       0 => './templates/header.html',
-      1 => 1403350498,
+      1 => 1404557463,
       2 => 'file',
     ),
   ),
@@ -58,7 +58,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<a href="/">
 		<img id="logo" src="../assets/images/logo.jpg" alt="Asistecnic - multiservicios" />
 	</a>
-	<nav>
+	<nav ng-class="{activo: ShowMenu}">
 		<?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['menuheader']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -70,7 +70,10 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 "><?php echo $_smarty_tpl->tpl_vars['item']->value['nombre'];?>
 </a>
   		<?php } ?>
+  		<a class="closemenu" href="javascript:void(0)" ng-click="ShowMenu = false">Cerrar</a>
 	</nav>
+
+	<a class="showmenu" href="javascript:void(0)" ng-click="ShowMenu = true">Menú</a>
 </header>
 
 <div class="wrapper"><?php }} ?>

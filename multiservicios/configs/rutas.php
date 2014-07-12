@@ -25,6 +25,15 @@ $servicios = array(
 		"img" => "",
 		"resumen" => "",
 	),
+	"contacto" => array(
+		"title" => "Servicio técnico Madrid, Toledo y poblaciones",
+		"descripcion" => "Servicio téncico, reparaciones, averías y mantenimiento en general en Madrid, Toledo y poblaciones",
+		"keywords" => "mantenimientos, reparaciones, averías, servicio técnico, urgencias 24 horas, televisores, equipos de sonido, máquinas de coser.",
+		"nombre" => "",
+		"link" => "",
+		"img" => "",
+		"resumen" => "",
+	),
 	"servicio-tecnico/maquinas-de-coser" => array(
 		"nombre" => "Máquinas de coser",
 		"link" => "servicio-tecnico/maquinas-de-coser",	

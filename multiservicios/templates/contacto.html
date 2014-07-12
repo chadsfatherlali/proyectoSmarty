@@ -1,7 +1,20 @@
 {{include file="header.html"}}
 
-	<div class="wrapper">
-		<h1>Esto es el contacto</h1>
-	</div>
+{{include file="telefonos.html"}}
 
+<div class="bloque bloque-contenido quienes-contacto">
+	<h1>Formulario de contacto por favor rellene los campos y nosotros nos pondremos en contacto con usted.</h1>
+	<form id="formularioDeContacto" class="formulario-de-contacto" name="formContacto" ng-submit="submit()">
+		<input type="text" name="nombre" placeholder="Inserte su nombre" ng-model="user.nombre" solotexto />
+		<input type="text" name="telefono" placeholder="Inserte su télefono de contacto" ng-model="user.telefono" telefono />
+		<input type="text" name="email" placeholder="Correo electrónico" ng-model="user.email" email />
+		<textarea name="mensaje" placeholder="Escriba su mensaje..." ng-model="user.mensaje" vacio ></textarea>
+		<input type="submit" value="Enviar" ng-click="enviarInfo($event)"/>
+	</form>
+	
+	<p class="highligths">* Si buscas un servicio en concreto mira todos nuestro servicios disponibles a continuación.</p>
+
+	{{include file="servicios.html"}}
+
+</div>
 {{include file="footer.html"}}

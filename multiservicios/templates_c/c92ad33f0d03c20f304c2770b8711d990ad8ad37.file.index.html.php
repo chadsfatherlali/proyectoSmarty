@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-06-21 13:53:32
+<?php /* Smarty version Smarty-3.1.16, created on 2014-06-28 12:49:38
          compiled from "./templates/poblaciones/index.html" */ ?>
 <?php /*%%SmartyHeaderCode:34733765453a55c5cda44b7-12639211%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c92ad33f0d03c20f304c2770b8711d990ad8ad37' => 
     array (
       0 => './templates/poblaciones/index.html',
-      1 => 1403351608,
+      1 => 1403952576,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<p>Prestamos servicio técnico, reparación en la población de <strong><?php echo $_smarty_tpl->tpl_vars['poblaciones']->value[$_GET['template']]['pueblo'];?>
 </strong> nos desplazamos para su mayor comidad, atendemos las 24 Horas y servicio de urgencias.</p>
 	
-	<?php echo $_smarty_tpl->getSubTemplate ("servicios-poblaciones.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+	<?php echo $_smarty_tpl->getSubTemplate ("servicios.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 </div>
 

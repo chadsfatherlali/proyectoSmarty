@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:26:42
+<?php /* Smarty version Smarty-3.1.16, created on 2014-07-12 11:22:18
          compiled from "./templates/quienes-somos.html" */ ?>
 <?php /*%%SmartyHeaderCode:6200715055336abc4a35271-84741855%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f58f27f1749b550b42479508c3ed03a47783c74d' => 
     array (
       0 => './templates/quienes-somos.html',
-      1 => 1400930800,
+      1 => 1403953688,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5336abc4b7ea61_05291991')) {function content_5336abc4b7ea61_05291991($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+
+<?php echo $_smarty_tpl->getSubTemplate ("telefonos.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 <div class="bloque bloque-contenido quienes-somos">
@@ -57,9 +60,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 	</ul>
 	
 </div>
-
-<?php echo $_smarty_tpl->getSubTemplate ("telefonos.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
-
 
 <?php echo $_smarty_tpl->getSubTemplate ("footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 <?php }} ?>
