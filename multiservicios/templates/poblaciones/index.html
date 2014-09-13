@@ -1,0 +1,15 @@
+{{include file="header.html" arg="poblaciones"}}
+
+<div class="bloque bloque-contenido">
+	<h1>Servicio técnico {{$poblaciones[$smarty.get.template].pueblo}}, telf: {{$poblaciones[$smarty.get.template].telefono}}</h1>
+	
+	<div id="mapa" attr-pueblo="{{$poblaciones[$smarty.get.template].pueblo}}" mapa></div>
+	
+	<p>Prestamos servicio técnico, reparación en la población de <strong>{{$poblaciones[$smarty.get.template].pueblo}}</strong> nos desplazamos para su mayor comidad, atendemos las 24 Horas y servicio de urgencias.</p>
+	
+	{{include file="servicios-poblaciones.html"}}
+</div>
+
+{{include file="telefonos.html"}}
+
+{{include file="footer.html"}}

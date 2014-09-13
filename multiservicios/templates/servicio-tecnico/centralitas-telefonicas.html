@@ -1,0 +1,23 @@
+{{include file="header.html"}}
+
+<div class="bloque bloque-contenido">
+	<h1>{{$servicios[$smarty.get.template].title}}.</h1>
+	
+	<div id="imgcontent">
+		<img src="../assets/images/{{$servicios[$smarty.get.template].img}}">
+	</div>
+
+	<section>
+		<article>
+			<p>Una buena centralita telefónica puede llegar a ser la columna vertebral de su empresa. Una conexión correcta asegura que todas las llamadas entrantes y salientes llegan a la persona correcta. También hace que todo sea más llevadero durante los períodos con más trabajo, crece con su negocio y le ofrece características técnicas que mejoran el sistema telefónico.</p>
+			<p>La mejor centralita para regular el tráfico telefónico en una empresa específica lo puede determinar un número de factores, como el tamaño del negocio y el número de estaciones de trabajo. Uno de los modelos a continuación ofrece la ventaja oculta perfecta para las comunicaciones de su negocio.</p>
+		</article>
+	</section>
+	
+	{{include file="servicios-poblaciones.html"}}
+
+</div>
+
+{{include file="telefonos.html"}}	
+
+{{include file="footer.html"}}
