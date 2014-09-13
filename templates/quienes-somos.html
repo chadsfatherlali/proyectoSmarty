@@ -1,5 +1,7 @@
 {{include file="header.html"}}
 
+{{include file="telefonos.html"}}
+
 <div class="bloque bloque-contenido quienes-somos">
 	<article>
 		<h1>Quienes somos</h1>
@@ -11,16 +13,16 @@
 		<p>Nuestro equipo brinda servicio a domicilio y servicio especializado las 24 horas los 7 días de la semana, nuestro servicio a domicilio esta siempre a su dispoción para su comodidad en donde nuestros técnicos evaluaran la reparación a ser posible realizarla en lugar mismo de la incidencia caso contrario procederán al traslado a nuestro taller centralizado para poder resolver su problema técnico.</p>
 		<p>Una ves detectado el problema nuestros técnicos procederan a comunicarse con usted informandole detalladamente del proceso a realizar, del tiempo estimado en la reparación y de los recursos necesarios para llevar a cabo el trabajo también a modo de presupuesto el informe del coste del mismo.</p>
 		<p>Dentro de nuestro servicios especializados disponemos de:</p>
-		<ul>
-			{{foreach key = key item = item from = $servicios}}
-				{{if $item.img}}
-					<li><a href="{{$item.link}}">* Servicio técnico <strong>{{$item.nombre}}</strong>.</a></li>
-				{{/if}}
-			{{/foreach}}
-		</ul>
 	</article>
+	
+	<ul>
+		{{foreach key = key item = item from = $servicios}}
+			{{if $item.img}}
+				<li><a href="{{$item.link}}">* Servicio técnico <strong>{{$item.nombre}}</strong>.</a></li>
+			{{/if}}
+		{{/foreach}}
+	</ul>
+	
 </div>
-
-{{include file="telefonos.html"}}
 
 {{include file="footer.html"}}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-17 12:11:39
+<?php /* Smarty version Smarty-3.1.16, created on 2014-07-05 11:43:00
          compiled from "./templates/telefonos.html" */ ?>
 <?php /*%%SmartyHeaderCode:440019122535247bebb6c42-68513048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e2ea188d2b019e110666d58b1d7e26b5faae3851' => 
     array (
       0 => './templates/telefonos.html',
-      1 => 1400321463,
+      1 => 1404553372,
       2 => 'file',
     ),
   ),
@@ -33,9 +33,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['item']->_loop = true;
  $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
 ?>
-    		<li><?php echo $_smarty_tpl->tpl_vars['item']->value['pueblo'];?>
+    		<li><a href="tel:<?php echo $_smarty_tpl->tpl_vars['item']->value['telefono'];?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value['pueblo'];?>
  <span><?php echo $_smarty_tpl->tpl_vars['item']->value['telefono'];?>
-</span></span></li>
+</span></a></li>
   		<?php } ?>
 	</ul>
 </div>	<?php }} ?>

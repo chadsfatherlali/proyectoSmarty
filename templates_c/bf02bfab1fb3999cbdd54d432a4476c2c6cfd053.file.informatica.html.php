@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:30:09
-         compiled from "./templates/servicios/centralitas-telefonicas.html" */ ?>
-<?php /*%%SmartyHeaderCode:10003197585336b37e158943-65277227%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.16, created on 2014-05-24 13:29:40
+         compiled from "./templates/servicios/informatica.html" */ ?>
+<?php /*%%SmartyHeaderCode:1643189788538082a4c9bf84-12590509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '67d10162dd7fc38e389743ff595bf59cbb019250' => 
+    'bf02bfab1fb3999cbdd54d432a4476c2c6cfd053' => 
     array (
-      0 => './templates/servicios/centralitas-telefonicas.html',
-      1 => 1400930589,
+      0 => './templates/servicios/informatica.html',
+      1 => 1400930973,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10003197585336b37e158943-65277227',
+  'nocache_hash' => '1643189788538082a4c9bf84-12590509',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_5336b37e294c12_73104830',
   'variables' => 
   array (
     'servicios' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_538082a4d6c839_87989565',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5336b37e294c12_73104830')) {function content_5336b37e294c12_73104830($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_538082a4d6c839_87989565')) {function content_538082a4d6c839_87989565($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 <div class="bloque bloque-contenido">

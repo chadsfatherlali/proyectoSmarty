@@ -1,6 +1,8 @@
+<input type="text" id="buscador" class="inputs-text" name="buscador" ng-change="buscar(abuscar)" ng-model="abuscar" placeholder="BUSCA AQUÍ TU SERVICIO..."/>
+
 {{foreach key = key item = item from = $servicios}}
 	{{if $item.img}}
-		<a class="servicio" href="{{$item.link}}" attr-busqueda="{{$item.nombre|lower}}" busqueda>
+		<a class="servicio" href="/{{$item.link}}" attr-busqueda="{{$item.nombre|lower}}" busqueda>
 			<h2>{{$item.nombre}}</h2>
 			<img src="../assets/images/{{$item.img}}" alt="Servicio técnico {{$item.nombre}}" title="Servicio técnico {{$item.nombre}}"/>
 			<article>

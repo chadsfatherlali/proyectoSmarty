@@ -1,70 +1,70 @@
 <?
 $poblaciones = array(
-	0 => array(
+	"poblaciones/Madrid" => array(
 		"pueblo" => "Madrid", 
 		"telefono" => 913504579,
 	),
-	1 => array(
+	"poblaciones/Toledo" => array(
 		"pueblo" => "Toledo",
 		"telefono" => 925227150,	
 	),
-	2 => array(
+	"poblaciones/Alcobendas" => array(
 		"pueblo" => "Alcobendas", 
 		"telefono" => 916610429,
 	),
-	3 => array(
+	"poblaciones/Alcorcón" => array(
 		"pueblo" => "Alcorcón",
 		"telefono" => 916440371, 
 	),
-	4 => array(
+	"poblaciones/Boadilla del Monte" => array(
 		"pueblo" => "Boadilla del Monte",
 		"telefono" => 916320559, 
 	),
-	5 => array(
+	"poblaciones/El Escorial" => array(
 		"pueblo" => "El Escorial", 
 		"telefono" => 918904490,
 	),
-	6 => array(
+	"poblaciones/Getafe" => array(
 		"pueblo" => "Getafe",
 		"telefono" => 916017597,
 	),
-	7 => array(
+	"poblaciones/Las Rozas" => array(
 		"pueblo" => "Las Rozas",
 		"telefono" => 916371800, 
 	),
-	8 => array(
+	"poblaciones/Majadahonda" => array(
 		"pueblo" => "Majadahonda",
 		"telefono" => 916386201,
 	),
-	9 => array(
+	"poblaciones/Móstoles" => array(
 		"pueblo" => "Móstoles",
 		"telefono" => 916659910,
 	),
-	10 => array(
+	"poblaciones/Parla" => array(
 		"pueblo" => "Parla",
 		"telefono" => 916989339,
 	),
-	11 => array(
+	"poblaciones/Pozuelo de Alarcón" => array(
 		"pueblo" => "Pozuelo de Alarcón",
 		"telefono" => 917157198,
 	),
-	12 => array(
+	"poblaciones/Torrelodones" => array(
 		"pueblo" => "Torrelodones",
 		"telefono" => 918590383, 
 	),
-	13 => array(
+	"poblaciones/Villalba" => array(
 		"pueblo" => "Villalba",
 		"telefono" => 918503783, 
 	),
-	14 => array(
+	"poblaciones/Villaviciosa de Odón" => array(
 		"pueblo" => "Villaviciosa de Odón",
 		"telefono" => 916166354,
 	),
-	15 => array(
+	"poblaciones/Otras Poblaciones" => array(
 		"pueblo" => "Otras Poblaciones",
 		"telefono" => 615190794,
 	), 
-	16 => array(
+	"poblaciones/Central" =>array(
 		"pueblo" => "Central",
 		"telefono" => 916053673,
 	),

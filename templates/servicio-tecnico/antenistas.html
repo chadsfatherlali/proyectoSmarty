@@ -1,0 +1,34 @@
+{{include file="header.html"}}
+
+{{include file="telefonos.html"}}
+
+<div class="bloque bloque-contenido">
+	<h1>{{$servicios[$smarty.get.template].title}}.</h1>
+	
+	<div id="imgcontent">
+		<img src="../assets/images/{{$servicios[$smarty.get.template].img}}">
+	</div>
+
+	<section>
+		<article>
+			<p>Nuestro personal técnico ofrece un servicio técnico profesional con antenistas cualificados y autorizados.</p>
+			<p>Con cualquier servicio efectuamos un mantenimiento preventivo para evitar cualquier avería o reparación posterior.</p>
+			<p>Reparamos, instalamos y orientamos todo tipo de antenas de televisión:</p>
+
+			<ol>
+				<li><span>Individuales.</span></li>
+				<li><span>Colectivas.</span></li>
+				<li><span>Parabólicas.</span></li>
+				<li><span>Vía satélite.</span></li>
+				<li><span>Cable.</span></li>
+				<li><span>TDT (televisión digital terrestre).</span></li>
+				<li><span>Motorizadas.</span></li>
+			</ol>
+		</article>
+	</section>
+	
+	{{include file="servicios-poblaciones.html"}}
+
+</div>
+
+{{include file="footer.html"}}
