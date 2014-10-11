@@ -1,0 +1,7 @@
+<div class="bloque bloques-telefono">	
+	<ul class="telefonos">
+		{{foreach key = key item = item from = $poblaciones}}
+    		<li><a href="tel:{{$item.telefono}}">{{$item.pueblo}} <span>{{$item.telefono}}</span></a></li>
+  		{{/foreach}}
+	</ul>
+</div>	

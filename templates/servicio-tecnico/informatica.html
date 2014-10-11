@@ -1,0 +1,32 @@
+{{include file="header.html"}}
+
+{{include file="telefonos.html"}}
+
+<div class="bloque bloque-contenido">
+	<h1>{{$servicios[$smarty.get.template].title}}.</h1>
+	
+	<div id="imgcontent">
+		<img src="../assets/images/{{$servicios[$smarty.get.template].img}}">
+	</div>
+
+	<section>
+		<article>
+			<p>Nuestro servicio técnico informático, presta un servicio profesional y adaptado a sus necesidades.</p>
+			<p>El servicio técnico prestado por nuestros profesionales, es de los más competitivos del mercado, ofreciendo a nuestros clientes una asistencia única y personalizada, dentro de nuestro servicio técnico ofrecemos:</p>
+			
+			<ol>
+				<li><span>Mantenimiento de ordenador portátiles y de sobremesa.</span></li>
+				<li><span>Recuperación de datos.</span></li>
+				<li><span>Formateo de discos duros.</span></li>
+				<li><span>Limpieza de virus, spam y troyanos.</span></li>
+				<li><span>Instalación de software.</span></li>
+				<li><span>Realizamos y mantenemos sitios web.</span></li>
+			</ol>
+		</article>
+	</section>
+	
+	{{include file="servicios-poblaciones.html"}}
+
+</div>	
+
+{{include file="footer.html"}}
