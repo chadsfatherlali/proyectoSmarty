@@ -3,11 +3,11 @@
  * Asistecnic Application
  * @package Asistecnic-application
  */
-
 require '../libs/Smarty.class.php';
 
 $template = (isset($_GET["template"]))? $_GET["template"] . ".html" : "index.html";
 $template = (strpos($template, "poblaciones/") === false)? $template : "poblaciones/index.html";
+$template = (strpos($template, "rest/") === false)? $template : $_GET["template"] . ".php";
 
 $smarty = new Smarty;
 //$smarty->force_compile = true;

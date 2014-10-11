@@ -1,0 +1,1 @@
+{{sendmail datos=$smarty.get.datos}}

@@ -147,7 +147,7 @@ _multiservicios_.directive("mapa", function($http) {
 	}
 });
 
-var controladorPrincipal = function($rootScope, $scope) {
+var controladorPrincipal = function($rootScope, $scope, $http) {
 	$scope.ShowMenu = false;
 	$rootScope.Servicios = {};
 
@@ -175,14 +175,22 @@ var controladorPrincipal = function($rootScope, $scope) {
 		&& form.email.$valid
 		&& form.mensaje.$dirty
 		&& form.mensaje.$valid) {
-			//element.submit();
+			$http(
+				{
+					method: "GET", 
+					url: "rest/contacto_rest",
+					params: {"datos": $scope.user}
+				}
+			).
+    		success(function(data, status, headers, config) {
+      			alert("Se envio el correo correctamente, gracias");
+    		}).
+    		error(function(data, status, headers, config) {
+    			alert("Se produjo un error por favor intente más tarde.")
+    		});
 		}
-		else{
+		else {
 			alert("Por favor revise el formulario");
 		}
-	}
-
-	$scope.submit = function($elm) {
-		console.log("DEVV:", angular.element($elm));
 	}
 }
